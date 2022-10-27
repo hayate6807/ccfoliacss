@@ -1,0 +1,46 @@
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* キャラ */
+.sc-cwpsFg,
+/* 背景 */
+.sc-TRNrF,
+/* チャット */
+.MuiDrawer-root,
+/* 吹き出し */
+.sc-djUGQo,
+/* モーダル削除 */
+[role="presentation"],
+/* スクリーン */
+.movable,
+/* ヘッダー削除 */
+header>.MuiToolbar-gutters,
+/* 音量 */
+.sc-ikjQzJ,
+/* 拡大縮小 */
+.sc-hZgfyJ,
+/* 鉛筆ボタン */
+.sc-dSuTWQ,
+/* 監視モード */
+.MuiSnackbar-root,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* 盤面 */
+.sc-kgUAyh {
+  width: 100% !important;
+}
+
+/* ポップアップ */
+[role="tooltip"] * {
+  font-size: 21px !important;
+  max-width: 1280px;
+  min-width: 720px;
+  margin: 24px auto;
+}
