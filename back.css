@@ -5,24 +5,25 @@ body {
   overflow: hidden;
 }
 
+
+/* メイン */
+.iAOgCy,
 /* キャラ */
-.sc-cwpsFg,
-/* メイン画面 */
-.cTrKpP,
+.sc-jmnVvD,
 /* チャット */
 .MuiDrawer-root,
 /* 吹き出し */
-.sc-djUGQo,
+.MuiPaper-elevation1,
 /* モーダル削除 */
 [role="presentation"],
 /* ヘッダー削除 */
 header>.MuiToolbar-gutters,
 /* 音量 */
-.sc-ikjQzJ,
+.sc-caXVBt,
 /* 拡大縮小 */
-.sc-hZgfyJ,
+.sc-itUGML,
 /* 鉛筆ボタン */
-.sc-dSuTWQ,
+.MuiButtonBase-root,
 /* 監視モード */
 .MuiSnackbar-root,
 /* スクロールバー */
@@ -31,7 +32,7 @@ header>.MuiToolbar-gutters,
 }
 
 /* 盤面 */
-.sc-kgUAyh {
+div[tabindex="0"] {
   width: 100% !important;
 }
 
@@ -42,3 +43,4 @@ header>.MuiToolbar-gutters,
   min-width: 720px;
   margin: 24px auto;
 }
+
