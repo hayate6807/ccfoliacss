@@ -1,0 +1,16 @@
+/* キャラアイコンを削除 */
+.MuiBadge-root {
+  display: none;
+} 
+
+/* ステータスの横並びの数調整 */
+.clruJQ {
+    margin-left: 4px;
+    max-width: 100px;/*ここで制御*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clruJQ {
+zoom: 3.0;
+}
