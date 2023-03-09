@@ -5,7 +5,9 @@ body {
   overflow: hidden;
 }
 
-.MuiPaper-root>img
+.MuiPaper-root>img {
+  display: none !important;
+}
 /* カットイン */
 div[open],
 /* 背景 */
