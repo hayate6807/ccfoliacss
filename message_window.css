@@ -5,8 +5,9 @@ body {
   overflow: hidden;
 }
 
+.MuiPaper-root>img
 /* カットイン */
-sc-djvmMF,
+div[open],
 /* 背景 */
 .sc-bWXABl,
 /* 盤面 */
