@@ -4,14 +4,13 @@
 } 
 
 /* ステータスの横並びの数調整 */
-.MfEgW {
+.lhFFvL {
     margin-left: 4px;
     max-width: 100px;/*ここで制御*/
     display: flex;
     flex-wrap: wrap;
 }
 
-.MfEgW {
+.lhFFvL {
 zoom: 3.0;
 }
-
