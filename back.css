@@ -8,19 +8,32 @@ body {
 /**************************
 　個別
 **************************/
+/*
+  キャラ
+  6: 初期位置
+  7: タイマー or 吹き出し
+  8: タイマー and 吹き出し
+  ※拡大縮小が消える不都合あり
+*/
+[tabindex="0"]>div:nth-child(6):not(.MuiPaper-root),
+[tabindex="0"]>div:nth-child(7):not(.MuiPaper-root),
+[tabindex="0"]>div:nth-child(8):not(.MuiPaper-root),
 /* カットイン */
 div[open],
-/* キャラ */
-.MuiButtonBase-root+div+div,
-.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
 /* チャット */
 .MuiDrawer-root.MuiDrawer-docked,
-/* 盤面 */
-div[tabindex="0"]>div:nth-child(1),
 /* 吹き出し */
-.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
   display: none !important;
 }
+/* キャラのみ消す */
+figure { display: none; }
+/* スクリーンパネルのみ消す */
+#root > div > div > div > div > div > div > div > .react-draggable:not(figure) { display: none!important; }
+/* 前景のみ消す */
+#root > div > div > div > div > div > div > div > div > img { display: none; }
+/* タイマーのみ消す */
+.MuiBox-root { display: none; }
 
 /**************************
 　共通
@@ -33,11 +46,14 @@ header>.MuiToolbar-gutters,
 /* 音量 */
 div[tabindex="0"]>div:nth-child(3),
 /* 拡大縮小 */
-.MuiButtonBase-root+div,
+button.MuiButtonBase-root:not(.MuiTab-root),
+button.MuiButtonBase-root+span,
 /* 鉛筆ボタン */
 .MuiButtonBase-root.MuiFab-root,
 /* 監視モード */
 .MuiSnackbar-root,
+/* 新しいダイスを非表示 */
+div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"],
 /* スクロールバー */
 ::-webkit-scrollbar {
   display: none !important;
@@ -49,6 +65,11 @@ div[tabindex="0"]>div:nth-child(3),
 /* 盤面 */
 div[tabindex="0"] {
   width: 100% !important;
+}
+
+/* 盤面の枠線 */
+div[style^="touch-action"]>div[style^="transform: translate"]>div[style^="transform: scale"]>div:first-child {
+  outline: unset !important;
 }
 
 /* ポップアップ */
